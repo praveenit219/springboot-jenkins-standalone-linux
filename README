@@ -1,0 +1,51 @@
+
+Bootstrapping Spring Boot Project with Spring Initializer
+
+Creating a springboot rest api application with Spring Initializer is an easy way. We will use Spring Web MVC as our web framework and some dependencies to continue complex business logics.
+
+Spring Initializer http://start.spring.io/ is great tool to bootstrap your Spring Boot projects.
+
+Launch Spring Initializer and choose the following
+•	Choose com.pheonix  as Group
+•	Choose springboot-jenkins-standalone-linux as Artifact
+•	Choose following dependencies
+1.	Web
+2.	Security
+3.	Jpa
+4.	rest
+5.	Actuator
+6.	DevTools
+7.	Click Generate Project.
+
+This would download a zip file on your local machine, unzip and extract the folder.
+From eclipse click File -> Import -> under maven -> Existing Maven Project.
+
+Once you finish you can see a project in your workspace and maven will load all dependencies and initialize the project.
+
+
+Git push and checkin
+
+Git should be installed and working from your os cli, and have a proper credentials to login to github.
+From the root folder of your project, initiate git as 
+Create a git repository from your github account. Take note of the https path of the github created repository
+•	git remote add https://github.com/praveenit219/springbootjenkinslinux.git
+•	git status
+•	touch README
+•	git add README
+•	git add (all other files)
+•	git status
+•	git commit –m “initializing project”
+•	git push origin master
+
+
+
+
+
+Jenkins
+
+Please follow proper setup of Jenkins using your local machine, or get the details of your remote Jenkins server for example
+•	docker running Jenkins
+•	virtual box running Jenkins
+•	your local running Jenkins or etc.
+
+
