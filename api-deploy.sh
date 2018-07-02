@@ -131,7 +131,7 @@ function watch(){
 stopServer
 
 # 2 - delete destinations folder content
-deleteFiles
+#deleteFiles
 
 # 3 - copy files to deploy dir
 copyFiles
