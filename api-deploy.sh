@@ -17,12 +17,13 @@ configFile=$4
 #destination absolute path. It must be pre created
 # todo : improve this script to create if not exists
 destAbsPath=/Users/praveentirunamali/mine/projects/springboots-manual/$projectName/$env
-if [[ ! -e $destAbsPath ]]; then
+if [ ! -d $destAbsPath ] 
+then
     mkdir $destAbsPath
     echo "created path $destAbsPath"
-elif [[ ! -d $destAbsPath ]]; then
-    echo "$dir or path already exists" 1>&2
 fi
+
+
 
 
 configFolder=resources
