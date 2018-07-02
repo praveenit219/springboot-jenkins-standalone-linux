@@ -26,7 +26,7 @@ configFolder=resources
 
 #jar file
 # $WORKSPACE is a jenkins var
-sourFile=$WORKSPACE/api/build/libs/$projectName*.jar
+sourFile=$WORKSPACE/target/$projectName*.jar
 destFile=$destAbsPath/$projectName.jar
 
 #config files folder
