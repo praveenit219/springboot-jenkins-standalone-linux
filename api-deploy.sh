@@ -17,6 +17,14 @@ configFile=$4
 #destination absolute path. It must be pre created
 # todo : improve this script to create if not exists
 destAbsPath=/Users/praveentirunamali/mine/projects/springboots-manual/$projectName/$env
+
+if [ -d $destAbsPath ] 
+then
+    echo "Directory exists"
+    rm -rf $destAbsPath
+    echo "deleted directory"
+fi
+
 if [ ! -d $destAbsPath ] 
 then
     mkdir $destAbsPath
