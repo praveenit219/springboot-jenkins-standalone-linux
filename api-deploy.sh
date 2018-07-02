@@ -81,7 +81,7 @@ function deleteFiles(){
 
 function copyFiles(){
     echo "Copying files from $sourFile to $destFile"
-    cp $sourFile $destFile
+    cp $sourFile $destAbsPath
 
     echo "Copying files from $sourConfigFolder"
     cp -r $sourConfigFolder $destConfigFolder
