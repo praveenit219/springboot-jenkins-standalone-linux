@@ -27,7 +27,7 @@ configFolder=resources
 #jar file
 # $WORKSPACE is a jenkins var
 sourFile=$WORKSPACE/target/$projectName*.jar
-destFile=$destAbsPath/$projectName.jar
+destFile=$destAbsPath/$projectName*.jar
 
 #config files folder
 sourConfigFolder=$WORKSPACE/$configFolder*
@@ -68,7 +68,7 @@ function deleteFiles(){
 }
 
 function copyFiles(){
-    echo "Copying files from $sourFile"
+    echo "Copying files from $sourFile to $destFile"
     cp $sourFile $destFile
 
     echo "Copying files from $sourConfigFolder"
